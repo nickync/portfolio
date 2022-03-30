@@ -6,7 +6,7 @@
     
 }
 body{
-    background-image: url(/portfolio/restaurant/images/background.jpeg);
+    background-image: url(/restaurant/images/background.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
     /* background-color: black; */
@@ -20,7 +20,7 @@ body{
 
 
 .one {
-    background-image: url(/portfolio/restaurant/images/background.jpeg);
+    background-image: url(/restaurant/images/background.jpeg);
     opacity: 70%;
     height: 53rem;
     background-size:cover;
@@ -108,7 +108,7 @@ body{
 .two {
     height: 26rem;
     width: 100%;
-    background-image: url(/portfolio/restaurant/images/cooking.jpg);
+    background-image: url(/restaurant/images/cooking.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     display: flex;
