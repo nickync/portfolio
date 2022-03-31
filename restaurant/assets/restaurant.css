@@ -159,6 +159,8 @@ body{
 
 .three h1 {
     color: orange;
+    height: 4rem;
+    
 }
 
 .three ol {
@@ -178,6 +180,7 @@ body{
 .three ol>li>a:hover {
     background-color: rgb(240, 120, 9);
     font-size: 2rem;
+    transition: all 0.6s;
 }
 
 .three a {
