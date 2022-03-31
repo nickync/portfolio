@@ -231,18 +231,23 @@
 * {
     margin: none;
     padding: none;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .one {
     display: flex;
     flex-direction: column;
     background-image: url(/restaurant/images/background.jpeg);
-    background-size: cover;
-    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
 
 }
 
 .one nav {
+    
     background-color: black;
     height: 40px;
     position:fixed;
@@ -250,22 +255,20 @@
 }
 
 .one ol {
+    width: 100%;
+    position: relative;
     display: flex;
     padding-inline-start: 0;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    margin:10px 0 0 0;
+    align-items:center;
 
 }
 
 .one ol>li {
     list-style: none;
-    border-right: 1px orange solid;
-    font-size: 1rem;
-    color: orange;
-    padding-right: 15px;
- 
+    font-size: 0.8rem;
+    color: orange; 
 }
 
 .one li:last-child {
@@ -277,9 +280,139 @@
     color: orange;
 }
 
+.header {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .header h1 {
+    font-size: 1.5rem;
+    color: rgba(83, 153, 219, 0.623);
+    margin-bottom: 2rem;
+} */
+
+.header > h1 {
+    color: rgb(6, 23, 49);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.header button {
+    background-color:orange;
+    border: none;
+    border-radius: 1rem;
+}
+
+.header form {
+    margin: 1rem;
+}
+
+.icons .fa-facebook, .icons .fa-twitter, .icons .fa-instagram {
+    color:orange;
+    font-size: 1rem;
+}
+
+.icons span {
+    color: black;
+    margin:0 0.5rem 0 0.1rem;
+}
+
+.two {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(/restaurant/images/aboutus.jpg);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-size: cover;
+}
+
+.two p, .two h1 {
+    color: orange;
+    font-size: 0.8rem;
+    
+}
+
+
+.two h1 + p {
+    padding-right: 50%;
+    font-size: 0.6rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.three {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.three span {
+    border: rgb(250, 162, 0) solid 1px;
+    padding: 4px;
+    border-radius: 25%;
+    color: rgb(240, 120, 9);
+}
+
+.three h1 {
+    font-size: 0.7rem;
+    font-style: italic;
+
+}
+
+.three ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:center;
+    padding-inline-start: 0%;
 
 
 
 
+
+}
+
+.three ol>li {
+    margin: 0 0.2rem;
+
+}
+.three ol li a {
+    text-decoration: none;
+    color: orange;
+}
+
+.three a:hover {
+    transition: all 0.5s ease;
+    background-color: rgb(250, 132, 21);
+    font-size: larger;
+}
+
+.dishes {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.dishes img {
+    margin: 0.5rem 0.1rem;
+    width: 10rem;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.5rem;
+}
 
 }
