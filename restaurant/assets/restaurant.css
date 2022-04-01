@@ -43,7 +43,7 @@
 }
 
 .background {
-    background-image: url(/images/1.jpg);
+    background-image: url(/restaurant/images/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: fill;
