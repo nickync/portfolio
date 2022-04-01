@@ -1,418 +1,174 @@
-@media screen and (min-width:1280px) {
-    
-  * {
-        box-sizing: border-box;
-        margin:0;
-    
-        font-family: 'Roboto', sans-serif;
-        
-    }
-    body{
-        background-image: url(/restaurant/images/background.jpeg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        /* background-color: black; */
-    }
-
-    .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-
-    .one {
-        background-image: url(/restaurant/images/background.jpeg);
-        opacity: 70%;
-        height: 53rem;
-        background-size:cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        position: relative;
-        top: 10rem;
-        left: 10rem;
-    }
-
-    .one>nav {
-        background-color: rgb(215, 216, 218,0);
-        position: fixed;
-        height: 3rem;
-        width: 60%;
-
-    }
-
-    .one ol {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: 1rem;
-        margin-left: 6rem;
-        padding-left: 0%;
-        padding-right: 0%;
-        background-color: black;
-    }
-
-    .one li {
-        border-right: solid 1px rgb(255, 174, 0);
-        padding-right: 1rem;
-    }
-
-    .one li:last-child {
-        border: none;
-    }
-
-    .one li, a{
-        font-size: 1.5rem;
-        list-style: none;
-        text-decoration: none;
-        color: rgb(250, 162, 0);
-    }
-
-    .fa-shopping-cart {
-        color: rgb(255, 136, 0);
-        size: 1rem;
-    }
-
-    .fa-search {
-        color: rgb(255, 166, 0);
-    }
-
-    .header {
-        margin-top: 5rem;
-        padding-left: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
-        font-size: larger;
-    }
-
-    .header > h1 {
-        color: rgb(6, 23, 49);
-        font-size: 3rem;
-        line-height: 8rem;
-        margin-top: 1rem;
-    }
-
-
-    .header button {
-        background-color:orange;
-        border: none;
-        border-radius: 1rem;
-    }
-
-    .icons .fa-facebook, .icons .fa-twitter, .icons .fa-instagram {
-        color:orange;
-        font-size: 1.5rem;
-    }
-
-    .icons span {
-        color: black;
-        margin:0 0.5rem;
-    }
-
-    .header form > input, button {
-        size: 2rem;
-        height: 3rem;
-        width: 10rem;
-        margin: 5rem 1rem;
-    }
-    .icons {
-        align-self: flex-start;
-        height: 3rem;
-    }
-
-    .two {
-        height: 26rem;
-        width: 100%;
-        background-image: url(/restaurant/images/cooking.jpg);
-        background-size:cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        z-index: 1;
-        color: orange;
-    }
-
-    .two > * {
-        margin-left: 5rem;
-        line-height: 1rem;
-        align-self: flex-start;
-    }
-
-    .two > p:first-child {
-        font-size: larger;
-        font-weight: bolder;
-    }
-
-    .two h1 {
-        font-size: 2rem;
-    }
-
-    .two h1 + p {
-        width: 30rem;
-        font-style: italic;
-        line-height: 1.5rem;
-    }
-
-    .three {
-        height: 40rem;
-        margin-top: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;    
-    }
-
-    .three span {
-        font-size: 3rem;
-        color: rgb(250, 132, 21);
-        font-weight: bolder;
-        border: 0.1rem orange solid;
-        border-radius: 25%;
-        padding: 10px 10px;
-    }
-
-    .three h1 {
-        color: orange;
-        height: 4rem;
-        
-    }
-
-    .three ol {
-        width: 50%;
-        padding-inline-start: 0;
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .three ol>li>a {
-        padding: 0.1rem 1rem;
-    }
-
-    .three ol>li>a:hover {
-        background-color: rgb(240, 120, 9);
-        font-size: 2rem;
-        transition: all 0.5s ease;
-    }
-
-    .three a {
-        color: orange;
-    }
-
-    .dishes > img {
-        width: 20rem;
-        height: auto;
-        margin-right: 2rem;
-    }
-
-    footer{
-        margin-top: 5rem;
-    }
-
-    #footer {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        font-size: smaller;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 390px) {
-
 * {
-    margin: none;
-    padding: none;
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Times, serif
 }
 
-.one {
-    display: flex;
-    flex-direction: column;
-    background-image: url(/restaurant/images/background.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 100%;
-
-}
-
-.one nav {
-    
-    background-color: black;
-    height: 40px;
+.nav {
+    background-color: rgb(52, 52, 52);
     position:fixed;
     width: 100%;
+    opacity: 85%;
+
 }
 
-.one ol {
-    width: 100%;
-    position: relative;
+
+.nav ol {
     display: flex;
-    padding-inline-start: 0;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items:center;
-
+    align-items: center;
 }
 
-.one ol>li {
-    list-style: none;
-    font-size: 0.8rem;
-    color: orange; 
-}
-
-.one li:last-child {
-    border: none;
-}
-
-.one a {
+.nav a, li {
     text-decoration: none;
-    color: orange;
+    list-style-type: none;
+    color: rgb(190, 146, 43);
+    font-size: 1.2rem;
 }
 
-.header {
-    margin-top: 50px;
+.nav li {
+    border-right: 1px solid rgb(145, 137, 123);
+    border-left: 1px solid rgb(145, 137, 123);
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+}
+
+.nav a:hover {
+    transition: all 3s ease;
+    background-color: white;
+    color:black
+}
+
+.background {
+    background-image: url(/images/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    height: 40rem;
+}
+.main {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(156,240,237);
+    background: linear-gradient(167deg, rgba(156,240,237,1) 0%, rgba(43,161,190,1) 50%, rgba(190,145,43,1) 100%);
+     */
+    margin-bottom: 3rem;
+    z-index: 2;
+}
+
+
+.headlines { 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-bottom: 3rem;
+    color: rgb(190, 146, 43);
+}
+
+.main input {
+    color:rgb(190, 146, 43)
+}
+.main button {
+    margin-bottom: 3rem;
+    background-color: rgb(190, 146, 43);
+    color: white;
+    border-radius: 15%;
+}
+
+.icons > * {
+    color: rgb(190, 146, 43);
+}
+
+.icons i {
+    margin-right: 1rem;
+}
+
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery > img {
+    z-index: 1;
+    width: 50%;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(190, 146, 43);
+    margin: 3rem 0;
+    line-height: 2rem;
+}
+
+.order {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* .header h1 {
-    font-size: 1.5rem;
-    color: rgba(83, 153, 219, 0.623);
-    margin-bottom: 2rem;
-} */
-
-.header > h1 {
-    color: rgb(6, 23, 49);
+.order span {
+    color: rgb(190, 146, 43);
+    font-weight: bolder;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-
-.header button {
-    background-color:orange;
-    border: none;
-    border-radius: 1rem;
-}
-
-.header form {
-    margin: 1rem;
-}
-
-.icons .fa-facebook, .icons .fa-twitter, .icons .fa-instagram {
-    color:orange;
-    font-size: 1rem;
-}
-
-.icons span {
-    color: black;
-    margin:0 0.5rem 0 0.1rem;
-}
-
-.two {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url(/restaurant/images/aboutus.jpg);
-    background-repeat: no-repeat;
-    object-fit: fill;
-    background-size: cover;
-}
-
-.two p, .two h1 {
-    color: orange;
-    font-size: 0.8rem;
-    
-}
-
-
-.two h1 + p {
-    padding-right: 50%;
-    font-size: 0.6rem;
-    margin-bottom: 2rem;
-    margin-top: 5rem;
-}
-
-.three {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.three span {
-    border: rgb(250, 162, 0) solid 1px;
-    padding: 4px;
-    border-radius: 25%;
-    color: rgb(240, 120, 9);
-}
-
-.three h1 {
-    font-size: 0.7rem;
-    font-style: italic;
-
-}
-
-.three ol {
-    list-style: none;
+.order ol {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items:center;
-    padding-inline-start: 0%;
-
-
-
-
-
+    flex:row nowrap;
+    list-style-type: none;
 }
 
-.three ol>li {
-    margin: 0 0.2rem;
-
+.order ol>li {
+    margin: 0 1rem 1rem 1rem;
 }
-.three ol li a {
+
+.order ol a {
     text-decoration: none;
-    color: orange;
+    color:rgb(190, 146, 43)
 }
 
-.three a:hover {
-    transition: all 0.5s ease;
-    background-color: rgb(250, 132, 21);
-    font-size: larger;
+.order ol a:hover {
+    background-color: orange;
+    color:white;
+    transition: all 1s ease-in;
+    font-size: 1.5rem;
 }
 
-.dishes {
-    width: 100%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.order h1 {
+    margin-top: 1rem;
 }
 
-.dishes img {
-    margin: 0.5rem 0.1rem;
-    width: 10rem;
+.order span {
+    padding:1rem;
+    border:solid 1px rgb(190, 146, 43,0.8);
+    border-radius: 25%;
+}
+
+footer {
+    padding-top: 3rem;
 }
 
 #footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    font-size: 0.5rem;
-}
-
+    color:white;
+    background-color: rgb(190, 146, 43);
 }
