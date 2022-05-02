@@ -3,23 +3,23 @@
     margin: none;
     padding: none;
     font-family: 'Roboto', sans-serif;
-    background-color: bisque;
+    background-color: rgb(79, 79, 78);
 }
 
 body {
     display:grid;
-    grid-template-columns: 8% auto 10%;
+    grid-template-columns: 5% auto 12%;
 }
 
 .navbar > h1 {
     writing-mode: vertical-lr;
     text-orientation: upright;
-    font-family:'Times New Roman', Times, serif;
     font-style: italic;
     margin: 0%;
     width: 100%;
     font-size: 1.5rem;
-    text-shadow:1px 2px red;
+    color: white;
+    text-shadow:2px 2px rgb(163, 155, 155);
 }
 
 .navbar ul{
@@ -36,14 +36,18 @@ body {
 .navbar li,a {
     list-style-type: none;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
+    font-style: italic;
+    font-weight: 900;
+    color: white;
     margin: 10% 0;
 }
 
 .navbar a:hover {
-    background-color: rgb(205, 191, 191);
+    background-color: rgb(255, 255, 255);
     width: 50%;
+    color:rgb(163, 155, 155);
+    font-size: larger;
+    transition:1s;
 }
 
 .blogPost {
