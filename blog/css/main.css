@@ -3,12 +3,13 @@
     margin: none;
     padding: none;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(79, 79, 78);
 }
 
 body {
     display:grid;
     grid-template-columns: 5% auto 12%;
+    background:linear-gradient(135deg, rgb(50, 50, 50) 0%,rgb(138, 134, 134) 100%);
+    border-color: gray;
 }
 
 .navbar > h1 {
@@ -66,29 +67,34 @@ body {
 
 .post > h1 {
     font-size: larger;
-    font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    color: white;
+    text-shadow: 0.5px 0.5px white;
 }
 
 .post img {
-    width: 80%;
-    height: auto;
+    width: 40%;
+    height: 80%;
 }
 
 .post article {
     margin: 2rem 1rem;
-    text-align: center;
+    text-align:justify;
 }
 
 .post button {
     border-radius: 15%;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.5rem;
     margin-bottom: 1rem;
 }
 
 .post button:hover {
-    background-color: orange;
-    border: orange solid 0.1rem;
+    background-color: rgb(50, 50, 50);
+    border: rgb(50, 50, 50) solid 0.1rem;
+    color:rgb(222, 219, 219);
+    border-style: groove;
 }
 
 .footer {
@@ -98,14 +104,23 @@ body {
     width: 10%;
 }
 
+.footer h1 {
+    color: white;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
 .footer ul, li {
     text-decoration: none;
     padding-left: 0;
     margin-bottom: 1rem;
+    text-decoration: underline;
+
 }
 
 .about {
     grid-column: 2;
+    margin-left: 15%;
 }
 
 .about h1{
@@ -125,4 +140,65 @@ body {
 	50% { background-position: 100% 50%; }
 	100% { background-position: 0% 50%; }
 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        position:relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        margin: 0;
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar li {
+        margin: 1rem;
+    }
+
+    .navbar h1 {
+        writing-mode:horizontal-tb;
+        text-orientation: upright;
+    }
+
+    .blogPost .post {
+        width: 100%;
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        margin: 2rem 0;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer h1 {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+
+    .footer li {
+        line-height: 2.5rem;
+    }
+
+    #about {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
 }
