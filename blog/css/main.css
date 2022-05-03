@@ -124,15 +124,16 @@ body {
 }
 
 .about h1{
+    text-align: center;
     margin-top: 10rem;
     font-size: 3rem;
-    background: linear-gradient(45deg, rgb(17, 140, 218) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(135deg, rgb(17, 140, 218) 0%, rgb(255, 255, 255) 50%, rgba(227, 202, 12, 0.805) 100%);
     background-size: 300%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 
-    animation:changec 10s ease-in-out infinite;
+    animation:changec 4s ease-in-out infinite;
 }
 
 @keyframes changec {
