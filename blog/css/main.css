@@ -1,3 +1,7 @@
+@import "navbar.css";
+@import "postElement.css";
+@import "footer.css";
+
 * {
     box-sizing: border-box;
     margin: none;
@@ -8,132 +12,13 @@
 body {
     display:grid;
     grid-template-columns: 5% auto 12%;
-    background:linear-gradient(135deg, rgb(50, 50, 50) 0%,rgb(138, 134, 134) 100%);
+    background:linear-gradient(135deg, rgb(74, 73, 73) 0%,rgb(138, 134, 134) 100%);
     border-color: gray;
 }
 
-.navbar > h1 {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    font-style: italic;
-    margin: 0%;
-    width: 100%;
-    font-size: 1.5rem;
-    color: white;
-    text-shadow:2px 2px rgb(163, 155, 155);
-}
-
-.navbar ul{
-    position:fixed;
-}
-.navbar > ul {
-    height: 100%;
-    padding-left: 0%;
-    display: flex;    
-    flex-direction: column;
-    justify-content:start;
-}
-
-.navbar li,a {
-    list-style-type: none;
-    text-decoration: none;
-    font-style: italic;
-    font-weight: 900;
-    color: white;
-    margin: 10% 0;
-}
-
-.navbar a:hover {
-    background-color: rgb(255, 255, 255);
-    width: 50%;
-    color:rgb(163, 155, 155);
-    font-size: larger;
-    transition:1s;
-}
-
-.blogPost {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    border: solid 1px bisque;
-}
-
-.post > h1 {
-    font-size: larger;
-    font-weight: 500;
-    text-transform: capitalize;
-    margin-top: 1rem;
-    color: white;
-    text-shadow: 0.5px 0.5px white;
-}
-
-.post img {
-    width: 40%;
-    height: 80%;
-}
-
-.post article {
-    margin: 2rem 1rem;
-    text-align:justify;
-}
-
-.post button {
-    border-radius: 15%;
-    padding: 0.2rem 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.post button:hover {
-    background-color: rgb(50, 50, 50);
-    border: rgb(50, 50, 50) solid 0.1rem;
-    color:rgb(222, 219, 219);
-    border-style: groove;
-}
-
-.footer {
-    position:fixed;
-    top: 0;
-    right:0%;
-    width: 10%;
-}
-
-.footer h1 {
-    color: white;
-    font-style: italic;
-    font-size: 1.2rem;
-}
-
-.footer ul, li {
-    text-decoration: none;
-    padding-left: 0;
-    margin-bottom: 1rem;
-    text-decoration: underline;
-
-}
-
-.about {
-    grid-column: 2;
-    margin-left: 15%;
-}
-
-.about h1{
-    text-align: center;
-    margin-top: 10rem;
-    font-size: 3rem;
-    background: linear-gradient(135deg, rgb(17, 140, 218) 0%, rgb(255, 255, 255) 50%, rgba(227, 202, 12, 0.805) 100%);
-    background-size: 300%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-
-    animation:changec 4s ease-in-out infinite;
+figcaption {
+    margin-top: 0.5rem;
+    font-size: smaller;
 }
 
 @keyframes changec {
@@ -180,12 +65,11 @@ body {
     }
 
     .footer {
+        display:grid;
         position: relative;
         width: 100%;
         margin: 2rem 0;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
+        grid-template-columns: 10% 1fr;
     }
 
     .footer h1 {
@@ -194,6 +78,7 @@ body {
     }
 
     .footer li {
+        margin-left: 5%;
         line-height: 2.5rem;
     }
 

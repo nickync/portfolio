@@ -1,0 +1,45 @@
+.blogPost {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border: solid 1px bisque;
+}
+
+.post > h1 {
+    font-size: larger;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    color: white;
+    text-shadow: 0.5px 0.5px white;
+}
+
+.post img {
+    width: 40%;
+    height: 80%;
+}
+
+.post blackquote {
+    margin: 2rem 1rem;
+    text-align:justify;
+}
+
+.post button {
+    border-radius: 15%;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.post button:hover {
+    background-color: rgb(50, 50, 50);
+    border: rgb(50, 50, 50) solid 0.1rem;
+    color:rgb(222, 219, 219);
+    border-style: groove;
+}

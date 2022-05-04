@@ -28,19 +28,19 @@ body {
     font-style: italic;
 }
 
-.author h2 {
+.author h2,h3 {
     font-style: italic;
     font-weight: 100;
     line-height: 0.5rem;
 }
 
-.author span {
+.author blackquote {
     margin-top: 5rem;
     text-indent: 1rem;
     line-height: 2rem;
 }
 
-.author span > a:hover {
+.author blackquote > a:hover {
     text-decoration: underline;
 }
 

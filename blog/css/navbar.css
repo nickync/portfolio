@@ -1,0 +1,38 @@
+.navbar > h1 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-style: italic;
+    margin: 0%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow:2px 2px rgb(163, 155, 155);
+}
+
+.navbar ul{
+    position:fixed;
+}
+.navbar > ul {
+    height: 100%;
+    padding-left: 0%;
+    display: flex;    
+    flex-direction: column;
+    justify-content:start;
+}
+
+.navbar li,a {
+    list-style-type: none;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 900;
+    color: white;
+    margin: 10% 0;
+}
+
+.navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    color:rgb(163, 155, 155);
+    font-size: larger;
+    transition:1s;
+}
