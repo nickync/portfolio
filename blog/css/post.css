@@ -65,6 +65,10 @@ body {
     margin:2rem 2rem;
 }
 
+figcaption {
+    text-align: center;
+}
+
 @media only screen and (max-width:600px) {
     .author {
         width: 80%;
