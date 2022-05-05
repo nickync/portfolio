@@ -46,7 +46,6 @@ body {
 
 .author img {
     width: 100%;
-    margin: 2rem;
     height: 60%;
 }
 
@@ -72,6 +71,8 @@ figcaption {
 
 @media only screen and (max-width:600px) {
     .author {
-        width: 80%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 }
