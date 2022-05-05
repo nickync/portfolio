@@ -22,11 +22,11 @@
 }
 
 .post img {
-    width: 40%;
-    height: 80%;
+    width: 30rem;
+    height: 40rem;
 }
 
-.post blackquote {
+.post blockquote {
     margin: 2rem 1rem;
     text-align:justify;
 }
