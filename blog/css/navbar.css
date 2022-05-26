@@ -9,6 +9,10 @@
     text-shadow:2px 2px rgb(163, 155, 155);
 }
 
+.navbar h1 em {
+    width:100%;
+}
+
 .navbar ul{
     position:fixed;
 }
