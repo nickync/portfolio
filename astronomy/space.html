@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/normalize.css" class="style">
+    <link rel="stylesheet" href="assets/space.css" class="style">
+    <link rel="shortcut icon" type="/images/favicon_io" href="/images/favicon_io/favicon.ico">
+    <title>Astronomy of the Day</title>
+</head>
+<body>
+    <div id="main">
+
+        <h1>Astronomy of the Day</h1>
+        
+        <input type="date">
+        <button id="getAPI" onclick="getView()">Time Travel</button>
+        <button onclick="getRandom()">Feeling Lucky?</button>
+        
+        <div class="m12">
+            <h2 id="title"></h2>
+        </div>
+
+        <div id="container">
+            <img id="img">
+            <button onclick="getHD()">HD version</button> 
+        </div>
+
+        <iframe id="vod" width="800" height="600"></iframe>
+        <h1>Description:</h1>
+        <span id="description"></span>
+
+    </div>
+
+    <footer>Powered by NASA API</footer>
+
+    <script src="assets/space.js"></script>
+</body>
+</html>

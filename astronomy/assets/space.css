@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+    background-image: url(/astronomy/images/pexels-michiel-alleman-1537611.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main h1 {
+    font-weight: bolder;
+    font-variant: small-caps;
+    /* text-shadow: 2px 2px #ff0000; */
+    text-shadow: 0px 0px 5px #2f1fd9, 0px 0px 10px #2f1fd9, 0px 0px 10px #2f1fd9,
+    0px 0px 20px #2f1fd9;
+    font-size: 3rem;
+}
+
+#main input, button{
+    color: rgb(5, 28, 121);
+    background: rgb(16, 4, 145);
+    background: radial-gradient(circle, rgba(28,154,222,1) 0%, rgba(42,85,226,1) 53%, rgba(34,105,221,0.8281906512605042) 98%);
+    border: 1px solid white;
+    padding:0.5rem 0.5rem;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+    width: 8rem;
+}
+
+#title {
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+#container{
+    background-color: transparent;
+    background-image: none;
+    border: 1px double rgb(209, 214, 220);
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+}
+
+#container button {
+    margin-top: 1rem;
+}
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+
+#main h1 {
+    animation: slidein 3s;
+    background-image: none;
+}
+
+@keyframes slidein {
+    from {
+      transform:rotateX(180);
+      color: black;
+    }
+  
+    to {
+        transform:rotateX(180);
+        color: #437fc0;
+    }
+}
+
+div.m12, #title {
+    background-image: none;
+}
+
+#description {
+    padding: 0 10% 5% 10%;
+    background-image: none;
+    font-size: 1.5rem;
+    color: rgb(196, 205, 255);
+}
+
+footer {
+    background-image: none;
+}
